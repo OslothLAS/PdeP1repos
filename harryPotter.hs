@@ -115,3 +115,5 @@ noPuedeGanarle mago1 mago2 = salud mago1 == leTiraTodosLosHechizos mago1 mago2
 leTiraTodosLosHechizos:: Mago -> Mago -> Int
 leTiraTodosLosHechizos magoPrimero magoSegundo = salud (foldl (\acc x -> x acc) magoPrimero (hechizos magoSegundo))
 
+
+foldl (\acc x -> x acc) elemento (listaDeFunciones)
